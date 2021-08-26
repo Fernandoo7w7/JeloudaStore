@@ -24,6 +24,6 @@ class marcas(models.Model):
     addidas = models.CharField(max_length=80, null=False, blank=False)
     puma = models.CharField(max_length=80, null=False, blank=False)
     converse = models.CharField(max_length=80, null=False, blank=False)
-    
+
 
 
