@@ -6,7 +6,8 @@ class product(models.Model):
     code = models.CharField(max_length=9, null=False, blank=False)
     name = models.CharField(max_length= 50, null=False, blank=False)
     description = models.TextField(null=False, blank=False)
-    price = models.DecimalField(null=False, blank=False, max_digits=2, decimal_places=2)
+    price = models.IntegerField(null=False, blank=False)
+
 
 class stock(models.Model):
     pk_stock = models.AutoField(primary_key=True, null=False, blank=False)
@@ -20,10 +21,10 @@ class tallas(models.Model):
 
 class marcas(models.Model):
     pk_marcas = models.AutoField(primary_key=True, null=False, blank=False)
-    nike = models.CharField(max_length=80, null=False, blank=False)
-    addidas = models.CharField(max_length=80, null=False, blank=False)
-    puma = models.CharField(max_length=80, null=False, blank=False)
-    converse = models.CharField(max_length=80, null=False, blank=False)
+    nike = models.IntegerField(null=False, blank=False)
+    addidas = models.IntegerField(null=False, blank=False)
+    puma = models.IntegerField(null=False, blank=False)
+    converse = models.IntegerField(null=False, blank=False)
 
 
 
