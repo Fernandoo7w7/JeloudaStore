@@ -7,6 +7,8 @@ class product(models.Model):
     name = models.CharField(max_length= 50, null=False, blank=False)
     description = models.TextField(null=False, blank=False)
     price = models.IntegerField(null=False, blank=False)
+    image1 = models.URLField(max_length=800, default='https://i.imgur.com/llmXU3a.jpg', blank=False, null=False)
+    image2 = models.URLField(max_length=800, default='https://i.imgur.co m/KDHLAjk.jpg', blank=False, null=False)
 
 
 class stock(models.Model):
