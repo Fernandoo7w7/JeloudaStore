@@ -75,19 +75,19 @@ WSGI_APPLICATION = 'DevExa.wsgi.application'
 #Database
 #https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
+#DATABASES = {
 
-    'default': {
-       'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'FerchDB',
-        'USER': 'ferchindb',
-        'PASSWORD': '1346',
-       'HOST': '127.0.0.1',
-       'PORT': 5432
-    }
-}
+    #'default': {
+       #'ENGINE': 'django.db.backends.postgresql_psycopg2',
+      #  'NAME': 'FerchDB',
+     #   'USER': 'ferchindb',
+    #    'PASSWORD': '1346',
+   #    'HOST': '127.0.0.1',
+  #     'PORT': 5432
+ #   }
+#}
 
-""""
+
 import dj_database_url
 from decouple import config
 
@@ -96,7 +96,7 @@ DATABASES = {
         default=config('DATABASE_URL')
     )
 }
-"""
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
