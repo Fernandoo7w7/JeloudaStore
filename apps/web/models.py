@@ -1,6 +1,8 @@
 from django.db import models
 
 # Create your models here.
+
+
 class product(models.Model):
     pk_product = models.AutoField(primary_key=True, null=False, blank=False)
     code = models.CharField(max_length=9, null=False, blank=False)
@@ -9,6 +11,7 @@ class product(models.Model):
     price = models.IntegerField(null=False, blank=False)
     image1 = models.URLField(max_length=800, default='https://i.imgur.com/llmXU3a.jpg', blank=False, null=False)
     image2 = models.URLField(max_length=800, default='https://i.imgur.co m/KDHLAjk.jpg', blank=False, null=False)
+
 
     class Meta:
         verbose_name = 'product'
